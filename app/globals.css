@@ -118,7 +118,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #121212;
+    background-color: #080808;
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
