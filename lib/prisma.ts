@@ -1,4 +1,4 @@
-import { PrismaClient } from '../lib/generated/prisma'
+import { PrismaClient } from '@/lib/generated/prisma'
 
 // Extend the NodeJS.Global interface to include the prisma property
 declare global {
