@@ -26,24 +26,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
       <body
-        className={`${geistSans.variable} ${ibmPlexMono.className} font-thin antialiased dark min-h-screen`}
+        className={`${geistSans.variable} ${ibmPlexMono.className} font-thin antialiased dark min-h-screen h-screen flex flex-col`}
       >
-      <ClickSpark
-        sparkColor='#1e9ffe'
-        sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
-        duration={400}
-      >
-        <Navbar />
-        <div className="p-10">
-        {children}
-        </div>
-      </ClickSpark>
+        <ClickSpark
+          sparkColor='#1e9ffe'
+          sparkSize={10}
+          sparkRadius={15}
+          sparkCount={8}
+          duration={400}
+        >
+          <Navbar />
+          <div className="flex-1 overflow-auto">
+            {children}
+          </div>
+        </ClickSpark>
       </body>
-
     </html>
   );
 }

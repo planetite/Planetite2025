@@ -14,8 +14,8 @@ const Page = async () => {
   const lastVersion = patchnotes[0]?.version || "v0.0.0";
 
   return (
-    <div className="space-y-6"> 
-      <h1 className="text-3xl font-bold">Patch Notes</h1>
+    <div className="space-y-6 h-full p-6 md:p-10 mt-10"> 
+      <h1 className="text-3xl md:text-5xl">Patch Notes</h1>
       {user && <AddPatchNoteDialog lastVersion={lastVersion} />}
       <div className="space-y-4">
       {patchnotes.map(note => (

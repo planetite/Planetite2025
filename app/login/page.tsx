@@ -33,8 +33,9 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex items-center justify-center">
-      <Card className="w-[400px]">
+    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex items-center justify-center font-mono p-10 ">
+      <Card className="sm:w-[500px] w-full ">
         <form action={login}>
           <CardHeader>
             <CardTitle>Login</CardTitle>
@@ -48,6 +49,7 @@ export default function LoginPage() {
           </CardFooter>
         </form>
       </Card>
+    </div>
     </div>
   );
 }
