@@ -7,7 +7,7 @@ const Page = async () => {
   // Fetch patch notes from the database
   const user = await currentUser();
   const patchnotes = await prisma.patchNote.findMany({
-    orderBy: { releaseDate: "desc" },
+    orderBy: { releaseDate: "desc", version: "desc" },
   });
 
   // Determine the last version
