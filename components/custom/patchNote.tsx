@@ -46,7 +46,7 @@ const PatchNote = ({
       <CardHeader>
         <CardTitle>{version}</CardTitle>
         <CardDescription>        
-          {releaseDate.toLocaleDateString("en-US", {
+          {releaseDate?.toLocaleDateString("en-US", {
           year: "numeric",
           month: "long",
           day: "numeric",
